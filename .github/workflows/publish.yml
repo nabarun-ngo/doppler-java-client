@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   build:
-   name: Build Spring Boot App
+   name: Build Java Library
    uses: nabarun-ngo/ngo-nabarun-templates/.github/workflows/Build-Test.yml@main
    with:
       platform: "java"
