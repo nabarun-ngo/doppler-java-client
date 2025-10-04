@@ -6,7 +6,6 @@ on:
     types: [opened, synchronize, reopened,closed]
     branches:
     - master
-    - stage
 
 permissions:
   contents: write      
