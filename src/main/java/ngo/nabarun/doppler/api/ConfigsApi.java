@@ -6,7 +6,6 @@ import com.fasterxml.jackson.databind.JsonNode;
 import ngo.nabarun.doppler.model.Config;
 import ngo.nabarun.doppler.model.Secret;
 
-import java.io.IOException;
 import java.util.*;
 
 public class ConfigsApi extends BaseApi{

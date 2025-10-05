@@ -36,7 +36,7 @@ ConfigsApi configsApi = new ConfigsApi("your_project", "your_token");
 Config[] configs = configsApi.listConfigs();
 List<Secret> secrets = configsApi.getSecrets("config_name");
 ```
-Currently being used in **ngo-nabarun-be** and **ngo-nabarun-test** repositories
+Currently being used in **ngo-nabarun-be** and **ngo-nabarun-test** repositories.
 
 ## API Reference
 

@@ -1,6 +1,4 @@
 import ngo.nabarun.doppler.api.ConfigsApi;
-import ngo.nabarun.doppler.api.DopplerClient;
-import ngo.nabarun.doppler.model.Config;
 import ngo.nabarun.doppler.model.Secret;
 
 public class Test {
