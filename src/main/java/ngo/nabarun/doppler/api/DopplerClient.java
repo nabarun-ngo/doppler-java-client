@@ -30,7 +30,11 @@ public class DopplerClient {
 
         try (Response response = httpClient.newCall(request).execute()) {
             if (!response.isSuccessful()) {
-                throw new IOException("HTTP error: " + response.code() + " - " + response.message()+" - "+response.body().string());
+                String errorBody = "";
+                if (response.body() != null) {
+                    errorBody = response.body().string();
+                }
+                throw new IOException("HTTP error: " + response.code() + " - " + response.message() + " - " + errorBody);
             }
             assert response.body() != null;
             return mapper.readValue(response.body().string(), clazz);
