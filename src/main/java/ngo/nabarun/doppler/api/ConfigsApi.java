@@ -44,6 +44,7 @@ public class ConfigsApi extends BaseApi{
                 } else {
                     secret.setValue(valueNode.toString());
                 }
+                secret.setVisibility(visibility);
                 secrets.add(secret);
             }
         }

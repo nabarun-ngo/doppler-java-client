@@ -7,6 +7,7 @@ public class Secret {
     private String key;
     private String value;
     private boolean sensitive;
+    private String visibility;
 }
 
 
